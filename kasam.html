@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+      />
+    <style>
+.option {
+  font-size: 50px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container paper">
+      <h1>Kasam ma software engineer nai ho!</h1>
+    </div>
+    <script>
+      let container = document.querySelector('.option-container')
+document.querySelector('.yes').addEventListener('mouseover', function(e) {
+  document.querySelector('.message').textContent = 'huhahahahahhahhahahahahahahahhahahah'
+  let yes = document.querySelector('.yes')
+  let no = document.querySelector('.no')
+  if (yes.nextElementSibling.tagName == "P") {
+    container.insertBefore(yes, no)
+  } else {
+    container.insertBefore(no, yes)
+  }
+})
+    </script>
+  </body>
+</html>
